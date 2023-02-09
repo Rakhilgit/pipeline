@@ -12,6 +12,11 @@ pipeline {
                git branch: 'main', url: 'https://github.com/Rakhilgit/pipeline.git'
                   }
            }
+           stage('testing') {
+            steps {
+               git branch: 'main', url: 'https://github.com/Rakhilgit/pipeline.git'
+                  }
+           }
          }
      
 }
