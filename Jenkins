@@ -8,5 +8,26 @@ pipeline {
             }
         }
      }
+     stages {
+        stage('build') {
+            steps {
+               git branch: 'main', url: 'https://github.com/Rakhilgit/pipeline.git'
+            }
+        }
+     }
+     stages {
+        stage('testing') {
+            steps {
+               git branch: 'main', url: 'https://github.com/Rakhilgit/pipeline.git'
+            }
+        }
+     }
+     stages {
+        stage('deployment') {
+            steps {
+               git branch: 'main', url: 'https://github.com/Rakhilgit/pipeline.git'
+            }
+        }
+     }
      
    }
